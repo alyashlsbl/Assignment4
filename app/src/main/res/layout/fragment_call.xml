@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallFragment"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/call_logo"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call Your Favorite!"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/et_call"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:hint="08xxx"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"/>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_call"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:onClick="buttonCall"-->
+<!--            android:src="@drawable/logo_call"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>
